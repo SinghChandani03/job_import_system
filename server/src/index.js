@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import { config } from './config/index.js';
+import serverless from 'serverless-http';
 import { connectDb } from './db.js';
 import { startCron, runFetchAndQueue } from './services/cronService.js';
 import jobSourcesRouter from './routes/jobSources.js';
